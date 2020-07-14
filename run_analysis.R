@@ -47,3 +47,6 @@ names(final_data)<-c("Subjects","Activities",col_names)
 
 #-------------average of each variable for each activity and each subject-------------
 avg_finaldata<-final_data %>% group_by(Subjects,Activities) %>% summarise_all(mean)
+
+#-------------creating a text file for the dataset-----------------
+write.table(avg_finaldata,file = "run_analysis.txt",row.names = FALSE)
