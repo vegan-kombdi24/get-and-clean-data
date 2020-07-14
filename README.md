@@ -1,7 +1,5 @@
-
-
 ---
-title: "README FILE"
+title: "ReadMe"
 author: "leron patel"
 date: "7/14/2020"
 output: html_document
